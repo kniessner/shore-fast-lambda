@@ -14,7 +14,7 @@ exports.handler = async (event, context) => {
     body: event.body,
   };
 
-  return fetch('https://app.inventorum.com/api/signup/', options)
+  return fetch('https://app-aws.inventorum.com/api/signup/', options)
     .then((response) => response.json())
     .then((response) => {
       return {
